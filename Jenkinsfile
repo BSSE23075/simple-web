@@ -7,7 +7,8 @@ pipeline {
     stages {
         stage('Checkout') {
             steps { 
-                git url: 'https://github.com/BSSE23075/simple-web.git' 
+                git branch: 'main',
+                    url: 'https://github.com/BSSE23075/simple-web.git' 
             } 
         }
         stage('Build') {
